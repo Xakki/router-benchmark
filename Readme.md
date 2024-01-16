@@ -27,11 +27,11 @@
 
 
 
-FPM Memory test#1 - 2097152
-FPM Memory test#2 - 2097152
-FPM Memory test#3 - 2118124
+* FPM Memory test#1 - 2097152
+* FPM Memory test#2 - 2097152
+* FPM Memory test#3 - 2118124
 
-RR Memory test#1 - 2097152
-RR Memory test#2 - 2097152
-RR Memory test#3 - 4194304
+* RR Memory test#1 - 2097152
+* RR Memory test#2 - 2097152
+* RR Memory test#3 - 4194304
 
