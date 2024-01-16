@@ -1,0 +1,27 @@
+version: "3"
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: docker/nginx/Dockerfile
+    working_dir: /app
+    volumes:
+      - ./public:/app
+    ports:
+      - "8080:80"
+    networks:
+      - default
+  php:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    working_dir: /app
+    volumes:
+      - ./:/app
+    ports:
+      - "8081:81"
+    networks:
+      - default
+networks:
+  default:
+    driver: bridge
