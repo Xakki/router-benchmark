@@ -1,6 +1,7 @@
 version: "3"
 services:
   nginx:
+    container_name: "test-nginx"
     build:
       context: .
       dockerfile: docker/nginx/Dockerfile
@@ -12,6 +13,7 @@ services:
     networks:
       - default
   php:
+    container_name: "test-php"
     build:
       context: .
       dockerfile: docker/php/Dockerfile
